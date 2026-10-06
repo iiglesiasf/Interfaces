@@ -5,7 +5,3 @@ h1{
 
 /*!important da prioridad sobre varios estilos, NO UTILIZAR NUNCA*/
 
-div > p{
-    color: yellow;
-
-}
