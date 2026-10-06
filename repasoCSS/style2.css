@@ -1,0 +1,11 @@
+h1{
+    color:aquamarine !important;
+    background-color: azure;
+}
+
+/*!important da prioridad sobre varios estilos, NO UTILIZAR NUNCA*/
+
+div > p{
+    color: yellow;
+
+}

@@ -1,0 +1,35 @@
+/*
+    selector {
+        propiedad: valor;
+        propiedad: valor;
+    }
+
+    Tipos de selector:
+    - Selector de etiqueta o tipo
+    - Selector de clases .
+    - Selector de id #
+    - Selector desdendiente directo > (selecciona solo a los hijos directos
+    - Selector descendientes (espacio) => Selecciona a todos los descendientes
+    - Selector universal * => Da una propiedad a todos los elementos del HTML. Se usa para hacer un reset básico(sacar espacios de los elementos de forma automática, etc)
+*/
+
+p{
+    font-size: 72px;
+    color: red;
+}
+
+div > p{
+    color: yellow;
+
+}
+
+div p{
+    color: blueviolet;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
