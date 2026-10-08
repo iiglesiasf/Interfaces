@@ -1,0 +1,32 @@
+/*Estilos*/
+p{
+    color: aqua; /* Strong hereda el color y el tamaño de la letra*/
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* bordes:
+        border: 1px solid blue;
+        border-style
+        border-color
+        border-width
+    */
+    border:1px solid blue; /* No se hereda!*/
+}
+
+strong{
+    border:inherit; /*va a tener el borde de su padre*/
+    color: initial; /*el color lo resetea a su valor original*/
+}
+
+.container{
+    font-family:'Courier New', Courier, Arial, sans-serif;
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    word-spacing: 10px;
+    border: 1px dotted blue;
+}
+
+.container > a{ /* > es selector de hijos directos, para acceder al hijo de un elemento*/
+    color: inherit;
+}

@@ -2,36 +2,73 @@ header, footer{
     background-color:#323F53;
     color: #F8F9FA;
     text-align:center;
-    padding: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+
     
 }
 
-h1{
-text-shadow: 2px 2px black;
-font-size: 72px;
-margin-bottom: 0px;
-margin-top: 10px;
+footer > p{
+    word-spacing: 2px;
+    font-size: 14px;
+    font-weight:100px;
+}
 
+.subtitulo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight:100;
+    word-spacing: 4px;
+}
+
+
+h1{
+    text-shadow: 3px 3px 5px black;
+    font-size: 62px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+}
+
+h2{
+    text-decoration: underline wavy blue;
+    font-size: 26px;
+    margin-top: 7px;
 }
 
 main{
     background-color: #F8F9FA;
     padding: 15px;
-    text-align: center;
+    padding-left: 25px;
+    line-height: 30px;
+
 }
 
 .entradilla{
     font-weight: bold;
-    text-align: left;
+    text-indent: 25px;
+}
+
+.normal{
+    text-indent: 25px;
+}
+
+a{
+    display: block; /* hay que convertirlo a bloque, "a" es un elemento inline*/
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 .destacado{
     color: purple;
     font-size: 22px;
     text-decoration: line-through;
-}
-
-a{
-    text-decoration: none;
     text-align: center;
 }

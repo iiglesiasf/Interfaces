@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="print">
-    <link rel="stylesheet" href="style2.css" type="text/css" media="screen">
+    <!--<link rel="stylesheet" href="style.css" type="text/css" media="print">
+    <link rel="stylesheet" href="style2.css" type="text/css" media="screen">-->
+    <link rel="stylesheet" href="inheritance.css" type="text/css" media="screen">
 </head>
 <body>
     <!-- Formas de añadir CSS
@@ -38,6 +39,28 @@
         </ul>
         <p>Otro párrafo</p>
     </div>
+
+    <!-- Herencia
+        Propiedades heredables(texto, fuente, color, font-size, font-weight, font-style, font-family)
+        Propiedades no heredables: background-color, border, margin, padding, width, height
+
+        Inherit: fuerza la herencia. Si un padre tiene un estilo, podemos forzar a que el hijo lo tenga también
+            nombrePropiedad: inherit;
+            border: inherit;
+        Initial: resetear al valor por defecto de la propiedad
+            nombrePropiedad: initial;
+
+        Los enlaces se comportan un poco distinto en la herencia:
+            el color no lo heredan
+    -->
+
+    <p> Esto es un párrafo y tiene un texto <strong> importante!! </strong></p>
+    <div class="container">
+        <h2>Subtítulo</h2>
+        <a href="#">Enlace</a>
+
+    </div>
+
 
 </body>
 </html>
