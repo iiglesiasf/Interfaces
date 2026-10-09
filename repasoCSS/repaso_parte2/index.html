@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de cajas</title>
+    <style>
+        /* reset básico*/
+
+        *{/*selector universal*/
+            margin: 0;
+            padding: 0;/* elemenos html vienen por efecto con espacios*/
+            box-sizing: border-box;
+        }
+
+        /* estilos CSS*/
+        .container{
+            /*padding: 10px;*/
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 5px;
+            border: 4px solid black;
+            margin-top: -5px;
+            margin-left: 50px;
+            margin-right: 200px;
+
+            /*margin: auto;*/
+            width: 500px;
+            height: 100px;
+            margin: 0 auto; /* centa el contenido en el eje x*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        MODELO DE CAJAS
+            content (texto, imagenes) -> width, height
+            
+            padding (relleno transparente interior)(no puede ser negativo)
+                padding-top
+                padding-bottom
+                padding-left
+                paddin-right
+                padding (funciona para todos a la vez)
+                padding: 10px 20px (10px para superio e inferior, 2px derecho e izq)
+                padding 10px 20px 4px (10px supeior, 20p derecho e izquierdo, 4px inferior)
+                padding 10px 20px 4px 5px (se aplica a cada borde en el sentido de las agujas del reloj)
+            
+            border-color
+            border-style
+            border-width
+            border
+
+            margin (relleno transparente exterior)(Sí puede ser negativo)
+                margin-top
+                margin-bottom
+                margin-left
+                margin-right
+                margin (funciona para todos a la vez)
+                margin: 10px 20px (10px para superio e inferior, 2px derecho e izq)
+                margin 10px 20px 4px (10px supeior, 20p derecho e izquierdo, 4px inferior)
+                margin 10px 20px 4px 5px (se aplica a cada borde en el sentido de las agujas del reloj)
+
+            Ancho real de un elemento = ancho + padding-left + padding-right + border-left + border-right
+            Alto real de un elemento = alto + padding-top + padding-bottom + border-top + border-bottom
+            Ambas dependen un poco del navegador
+    -->
+
+    <div class="container"> Esto es una caja </div>
+    
+</body>
+</html>
