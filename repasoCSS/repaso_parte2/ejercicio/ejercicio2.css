@@ -19,7 +19,7 @@ article{
     margin-bottom: 15px;
     padding-left: 20px;
     padding: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     border-left: 15px solid rgb(83, 0, 128);
     border-top: 5px solid rgb(83, 0, 128);
     border-right: 5px dashed rgb(83, 0, 128);
@@ -27,5 +27,12 @@ article{
 }
 
 a{
-    background-color:rgb(83, 0, 128);
+    border-top: 2px solid rgb(206, 168, 255);
+    border-left: 2px solid rgb(206, 168, 255);
+    border-right: 3px solid rgb(36, 0, 83);
+    border-bottom: 3px solid rgb(36, 0, 83);
+    text-decoration: none;
+    color:white;
+    background-color:rgb(139, 36, 218);
+    padding: 10px 15px 10px 15px;
 }
