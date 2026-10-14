@@ -1,0 +1,45 @@
+table, tr,td{
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    border: black solid 2px;
+    border-collapse: collapse;
+}
+
+
+tr:first-child{
+    color:red;
+}
+
+tr:nth-child(2){
+    color:blue;
+}
+
+tr:nth-child(3){
+    color:green;
+}
+
+tr:nth-child(4){
+    color:orange;
+}
+
+tr:last-child{
+    color:purple;
+}
+
+
+td:first-child{
+    background-color: white;
+}
+
+td:nth-child(2){
+    background-color: yellow;
+}
+
+td:nth-child(3){
+    background-color: pink;
+}
+
+td:last-child{
+    background-color: gray;
+}

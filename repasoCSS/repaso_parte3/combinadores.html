@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /* <!-- Combinadores: Elementos CSS que se combinan para crear nuevos elementos-->
+
+            Selectores:
+                - Universal: *
+                - Etiqueta: h1, p, div...
+                - De clases
+                - De IDs
+
+            Combinadores: combinarán estos selectores:
+                - Descendiente hijo >
+                - Descendiente (espacio)
+                - Hermano adyacente +
+                - Hermanos subsiguientes (~)
+
+        */
+        /* PREGUNTA TÍPICA DE EXAMEN, ¿A QUÉ AFECTARÁ CADA CÓDIGO?*/
+        div > p{
+            color: red; /* Afectará a los párrafos 3, 4, 5 y 6 (todos los descendientes)*/
+        }
+
+        div p{
+            color: blue; /* Afectará a los mismos*/
+        }
+
+        div + p{
+            color:purple; /* Afectará al 6 y al 7, es decir, al primer p que salga después de cada div*/
+        }
+
+        div ~ p{ /*Afectará a los siguientes hermanos de un elemento (6, 7, 8)*/
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Combinadores</h1>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <div>
+        <p>Para 3</p>
+        <p>Para 4</p>
+        <div>
+            <p>Para 5</p>
+        </div>
+        <p>Para 6</p>
+    </div>
+    <p>Para 7</p>
+    <p>Para 8</p>
+</body>
+</html>

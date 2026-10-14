@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <style>
+        /*
+            Pseudoclases: sirven para aplicar estilos a los estados de un elemento html
+            Sintaxis:
+                selector: nombre_pseudoclase{
+                    estilos css;
+                }
+                
+                a:hover{
+                    color: blue;
+                }
+
+                ENLACES:
+                    :link => no visitado
+                    :visited => cuando está visitado
+                    :hover => cuando pasamos el ratón
+                    :active => cuando hacemos click en el enlace
+        */
+        
+        a:link{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            color: blue;
+        }
+
+        a:visited{
+            color:red;
+        }
+
+        a:hover{
+            color:green;
+            text-decoration: none;
+        }
+
+        a:active{
+            color: yellow;
+
+        }
+
+        button{
+            background-color: aqua;
+            border-radius: 100%;
+            border-color: rgb(119, 214, 255);
+            padding: 10px;
+            cursor: pointed;
+            width: 150px;
+            height: 50px;
+        }
+
+        button:hover{
+            box-shadow: 10px 10px 24px #bec5cb, -10px -10px 24px #ffffff;
+            width: 125px;
+            height: 70px;
+        }
+
+        /*
+            :only child => para seleccionar solo un único elemento
+            :first-child => selecciona al primer elemento hijo
+            :last-child => selecciona al último elemento hijo
+            :nth-child() => indicamos un numero de hijos y seleccionará ese número
+        */
+
+        ol li:first-child{
+            color: red;
+        }
+
+        li:last-child{
+            color: blue;
+        }
+
+        li:nth-child(even):hover{ /*los hijos pares li */
+            font-weight: bold;
+            text-decoration: underline solid black;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h1> PSEUDOCLASE </h1>
+    <a href="#"> Google </a>
+    <button>Click</button>
+
+    <ol>
+        <li>Wireframe</li>
+        <li>dw5 Servidor</li>
+        <li>CSS menú navegación</li>
+        <li>nose</li>
+    </ol>
+    
+</body>
+</html>

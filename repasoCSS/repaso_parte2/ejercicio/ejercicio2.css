@@ -1,5 +1,14 @@
+/* Recomendable hacer al principio:
+* {
+    margin: 0px;
+    padding: 0px;
+    border-size: border-box;
+
+}
+*/
 .container{
     padding: 15px;
+    margin: auto;
     border: 10px solid blue;
     border-left: 2px dashed blue;
     border-right:2px dashed blue;
@@ -15,15 +24,20 @@ h1{
     background-color: rgb(198, 198, 255);
 }
 
+h2{
+    border-bottom: 1px solid rgb(206, 168, 255);
+    padding-bottom:12px;
+}
+
 article{
     margin-bottom: 15px;
     padding-left: 20px;
     padding: 10px;
     padding-bottom: 20px;
-    border-left: 15px solid rgb(83, 0, 128);
-    border-top: 5px solid rgb(83, 0, 128);
-    border-right: 5px dashed rgb(83, 0, 128);
-    border-bottom: 5px double rgb(83, 0, 128);
+    border-left: 15px solid rgb(144, 58, 255);
+    border-top: 5px solid rgb(144, 58, 255);
+    border-right: 5px dashed rgb(179, 121, 255);
+    border-bottom: 5px double rgb(179, 121, 255);
 }
 
 a{
