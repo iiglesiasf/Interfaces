@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+        /*
+            Sintaxis:
+            selector::nombre_pseudoelemento{
+                estilos css
+            }
+
+            ::after => inserta contenido después de un elemento
+            ::before => inserta contenido antes de un elemento
+            ::marker
+            ::selection
+            ::first-letter
+            ::first::line
+        */
+
+        html{
+            font-size:20px /*elemento raiz*/;
+        }
+
+        h1::after{
+            content: "Añado al final"; /*Texto que se añade tras el h1*/
+            font-size: 30px;
+            color: yellow;
+        }
+
+        h1::before{
+            content: "Añado al principio"; /*Texto que se añade antes del h1*/
+            font-size: 30px;
+            color: red;
+        }
+
+        p::first-letter{
+            font-size:50px;
+            font-style: italic;
+            text-decoration: underline solid black;
+        }
+
+        /* Propiedades lista(para menús de navegación sobre todo: se quita la viñeta con list-style-type):*/
+        ul{
+            list-style-type: none; /* circle, disc, square, etc*/
+            /*list-style-image: url('ruta');*/
+            list-style-position: outside; /* para determinar la posición de la viñeta*/
+            border: 1px solid black;
+            margin: 0px;
+            padding:0;
+        }
+
+        li{
+            border: 1px solid black;
+        }
+
+        li::marker{
+            content:❤️;
+            color: red;
+            font-size: 30px;
+        }
+
+        /*
+            MEDIDAS ABSOLUTAS: Son fijas, independientemente del dispositivo: px(la importante), cm, in, pt, pc
+
+            MEDIDAS RELATIVAS: Varían, es relativa con respecto a su padre o a otro elemento: %, em, rem, vw, vh
+            - em(el tamaño es relativo a un elemento padre), 
+            - rem(el elemento es relativo al elemento raiz, el HTML, que tiene 16px de tamaño)
+            MAX-WIDTH ES IMPORTANTE
+        */
+
+        div{
+            background-color: aquamarine;
+            border: 1px solid, black;
+        }
+
+        .container1{
+            width: 800px; /*Contenedor fijo*/
+        }
+
+        .container2{
+            width: 50%; /*Contenedor variable*/
+            margin:auto; /*o margin: 0 auto*/
+        }
+
+        .container3{
+            width: 25%;
+            color:blue;
+        }
+
+        .container4{
+            max-width: 800px;/*Si la pantalla es mayor a 800 px, el div mide 800px. Si es menor a 800, se adaptará*/
+            font-size: 20px;/* propiedad heredable*/
+        
+        }
+        .para-interior{
+            font-size: 0.5rem
+        }
+
+        .container5{
+            max-width: 750px;
+            min-width: 500px;
+            height:50px;
+            background-color:blueviolet;
+        }
+
+        .para{
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> PSEUDOELEMENTOS </h1>
+    <p><span>L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates quaerat maiores aliquid ipsa, laboriosam fugit vitae omnis aspernatur neque provident ea recusandae ratione! In soluta ipsa quidem ut laudantium. Voluptatum.
+    Ab quam magni quasi voluptates sit vitae aperiam, ipsam doloremque tempore qui iusto tempora sapiente. Possimus reprehenderit aut officia voluptate consequatur! Fugit minus vel aliquid, voluptate sapiente omnis ea repellat?
+    Illum dignissimos consectetur repellat cupiditate corrupti enim nam ea ex rerum sit nostrum, veniam fuga. Hic optio sed quis est dignissimos illo tempore repudiandae illum, necessitatibus at consectetur ex ratione.
+    Facilis modi quos architecto? Tenetur minus cumque facere necessitatibus ipsum laudantium architecto nesciunt voluptates sint iste iure in, illo exercitationem unde quis consequuntur culpa molestiae dignissimos harum voluptatem ullam a?
+    Facilis vitae dolore corporis! Pariatur molestiae ea animi fugit praesentium vitae autem, aut assumenda qui, officia ut cum, eaque necessitatibus id illum ipsa ab? Quia sequi debitis sunt modi voluptates?</p>
+
+    <!-- span es un elemento en línea, sirve para cambiar pequeños elementos del texto-->
+    <!-- h1 es un elemento en bloque-->
+    
+    <ul>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+    </ul>
+
+    <div class="container1">
+        Esto es un contenedor con medida fija px
+
+    </div>
+
+    <div class="container2">
+        Esto es un contenedor con medida relativa %
+        <div class="container3">
+            Mini contenedor
+        </div>
+    </div>
+
+    <!-- width, height, max-width(le damos un tamaño máximo a algo, que se adapatará si la pantalla es más pequeña), min-width, max-height, min-height-->
+
+    <div class="container4">
+        Contenedor con ancho max-width
+    </div>
+
+    <div class="container5">
+        Contenedor con ancho máximo y mínimo
+        <p class="para-interior">Hola</p>
+    </div>
+
+    <p class="para">
+        Lorem ipsum
+    </p>
+</body>
+</html>
