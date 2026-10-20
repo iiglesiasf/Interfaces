@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT Y CLEAR</title>
+    <style>
+        /*FLOAT: flota elementos
+            left
+            right
+            none
+            inherit
+        */
+
+        img{
+            float:right;
+        }
+
+
+        ul{
+            list-style-type: none;
+        }
+
+
+        ul li{
+            float:left;
+            
+        }
+
+        .limpiar{
+            clear:both;
+        }
+
+        /*CLEAR: limpia el flotamiento
+            left
+            right
+            both
+        */
+
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: block;
+        }
+
+        .caja1, .caja2, .caja3{
+            float: left;
+        }
+
+        .caja3{
+            float: none;
+        }
+
+    </style>
+</head>
+<body>
+    <p><img src="dog.png" alt="perro" width="50" height="auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt temporibus earum veniam eligendi beatae, accusantium ullam minus. Totam ratione saepe suscipit tenetur voluptatum obcaecati deleniti dolore quo fuga quis.
+    Eum facilis mollitia fuga soluta accusamus corporis, quas explicabo dolore a ut deleniti sint nobis? Tenetur, repellendus distinctio. Deleniti id nihil maiores suscipit sequi aliquid tenetur aliquam, velit numquam in?
+    Quibusdam distinctio quos, soluta minus possimus cumque rerum, doloribus pariatur esse doloremque adipisci porro quasi tempore magni temporibus illo optio architecto ea aspernatur ex vel molestiae debitis aliquam. Voluptatem, inventore.
+    Accusamus tempora error et ipsam exercitationem suscipit facilis cupiditate voluptates adipisci, nulla vel temporibus vero qui ipsum commodi ut incidunt corrupti, dignissimos cumque voluptas laudantium odio consequuntur asperiores. Sapiente, accusamus?
+    Blanditiis obcaecati harum illo, deserunt perspiciatis incidunt assumenda, ipsam at, maiores quibusdam vero soluta? Quidem quis rem, aliquam voluptas provident qui unde autem suscipit veritatis incidunt aut quae, ratione magnam!</p>
+
+    <ul>
+        <li>Inicio</li>
+        <li>Sobre nosotros</li>
+        <li>Contacto</li>
+
+    </ul>
+
+    <p class="limpiar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit assumenda vero, delectus doloribus deserunt veniam debitis quisquam tempore eum odit ipsam esse quam praesentium placeat vel ea mollitia pariatur quas!
+    Voluptate fugit quis quae exercitationem et veniam aliquam impedit non, modi sint nulla laborum? Illum perferendis nisi sunt natus qui tempora, eaque nam omnis? Ab beatae facere eum magnam in?</p>
+    
+    <!-- Añadir flotamiento a las cajas y eliminar el flotamiento del enlace-->
+    <div class="caja1">Caja1</div>
+    <div class="caja2">Caja2</div>
+    <div class="caja3">Caja3</div>
+    <a href="#">Enlace</a>
+
+</body>
+</html>
