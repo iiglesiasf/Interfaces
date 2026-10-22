@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: inline, inline-block, block, none</title>
+    <style>
+        /* Display: Cambia la previsualización de un elemento. No es heredable
+            inline: no empiezan ni acaban en nueva línea y ocupan solo el content. No se puede dar width y height
+            inline-block: no empiezan ni acaban en nueva línea, pero si se puede dar width y height
+            block: 
+            none: oculta un elemento sin dejar su hueco
+        */
+
+        /* Reset básico*/
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        div{
+            width: 300px;
+            height: 200px;
+            display: inline; /* los elementos en línea no tienen ancho ni alto*/
+        }
+
+        .container1{
+            background-color:aqua;
+        }
+
+        .container2{
+            background-color:yellowgreen;
+        }
+
+        .container3{
+            background-color:yellow;
+        }
+
+        a{
+            display:block;
+        }
+
+        span{
+            display:block;
+        }
+
+        img{
+            display: none; /*la imagen se oculta sin dejar un hueco*/
+            
+        }
+
+        /*Pseudoclases
+            selector: nombre_pseudoclase
+            :hover
+
+            combinadores: + (hermano siguiente)
+                ~ (todos los hermanos siguientes)
+                + (el siguiente hermano)
+        */
+        h1:hover + img{
+            display: block;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1> Pasa el ratón </h1>
+    <img src="dog.png" alt="perro" height="200" width="200">
+    <br>
+
+        <div class="container1">Caja1</div> <!-- Si ponemos en una sola línea los div, quitaríamos los espacios entre los contenedores inline-->
+        <div class="container2">Caja2</div>
+        <div class="container3">Caja3</div>
+
+        <a href="#">Enlace 1</a>
+        <a href="#">Enlace 2</a>
+        <a href="#">Enlace 3</a>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, eius doloribus rerum nam, <span>corporis</span> vitae aliquid incidunt reprehenderit libero repudiandae excepturi animi delectus, neque officia ex dolore iste sed commodi!
+        Obcaecati accusantium architecto tenetur? Asperiores maxime iure libero esse sapiente debitis sequi quibusdam nisi atque ea eveniet sed fuga, eos ipsam autem ab. Saepe blanditiis, aliquam dolore nihil ipsa illo?</p>
+</body>
+</html>

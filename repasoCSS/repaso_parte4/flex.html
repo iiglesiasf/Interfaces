@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        /*
+            Display: flex: Sirve para crear una lista de elementos flexible. Hay que saberse si o si sus propiedades, las cuales no se heredan a los hijos.
+            Propiedades del padre
+        
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .flex-item{
+            background-color: yellowgreen;
+            width: 200px;
+        }
+
+        .flex-container{
+            background-color: aquamarine;
+            height: 500px;
+            display: flex; /*display: inline-flex;*/
+            /*flex-direction: // indica la dirección de la línea flexible
+                valores:
+                    row:(en fila por defecto), column, row-reverse, column-reverse (estos 2 últimos no se usan apenas)
+            */
+            flex-direction: row;
+
+            /*
+                justify-content: // alinea la linea flexible en el eje principal(horizontal en este caso)
+                valores: center, flex-start, flex-end, space-around, space-evenly(deja el mismo espacio entre todos los elementos y deja espacio a los lados), space between(deja el mismo espacio entre todos los elementos y pegan elementos a los lados)...
+            */
+
+            justify-content: space-evenly;
+
+            /*
+                align-items: alinea la línea flexible en el eje contrario al principal(vertical en este caso)
+                valores: center, flex-start, flex-end, stretch(estira el elemento para que ocupe todo el alto, es el valor por defecto)
+            */
+            align-items: center;
+
+            /*gap: es la propiedad abreviada. row-gap y en column-gap
+            da espacio entre los elementos flexibles
+            */
+
+            gap: 20px;
+
+            /*flex-wrap: permite que los elementos visibles, si no cogen, que bajen de fila
+                valores: nowrap(valor por defecto), wrap
+            */
+
+            flex-wrap: wrap; /* permite bajar elementos */
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div class="flex-item">Elemento1</div>
+        <div class="flex-item">Elemento2</div>
+        <div class="flex-item">Elemento3</div>
+        <div class="flex-item">Elemento4</div>
+        <div class="flex-item">Elemento5</div>
+    </div>
+
+</body>
+</html>
