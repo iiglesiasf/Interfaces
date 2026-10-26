@@ -17,7 +17,7 @@ header{
 
 .menu{
     display: flex;
-    gap: 35px;
+
 }
 
 .marca{
@@ -40,24 +40,25 @@ a{
     color: white;
     text-align: center;
     align-items: center;
-
+    font-size: 18px;
+    padding: 10px 14px;
 }
 
 
 a:hover{
-    background-color: rgb(83, 83, 255);
-    margin: auto;
-    text-align:center;
+    background-color: rgb(81, 206, 255);
+    border-radius: 5px;
 }
 
 
 a:active{
-    background-color: rgb(83, 206, 255);
+    background-color: rgb(147, 224, 255);
+    border-radius: 5px;
 }
 
 
 .acceso{
     border: solid 2px white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 0px;
 }

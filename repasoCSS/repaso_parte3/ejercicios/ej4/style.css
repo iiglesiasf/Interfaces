@@ -1,0 +1,26 @@
+table, tr, td{
+    width: 50%;
+    text-align: center;
+    border: black solid 2px;
+    border-collapse: collapse;
+}
+
+tr:first-child{
+    background-color: sienna;
+    color: white;
+    height: 70px;
+}
+
+tr:nth-child(2n){ /*los hijos impares tr */
+    background-color: darksalmon;
+}
+
+tr:nth-child(even){ /*los hijos pares tr */
+    background-color: rgb(255, 232, 141);
+}
+
+tr:hover{
+    background-color: sienna;
+    color: white;
+    border-color:black;
+}
