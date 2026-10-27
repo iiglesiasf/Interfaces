@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex hijos flexibles</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            background-color: lightcyan;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            /*flex-direction: row*/
+            /*justify-content: flex-end;*/
+            /*align-items: center;*/
+            height: 250px;
+            /*flex-wrap: nowrap;*/
+            /*align-content: center;*/
+            /*flex-flow: flex-direction flex-wrap*/
+            /*width: 600px;*/
+        }
+
+        .flex-item{
+            width: 400px;
+            /*flex-basis: 400px => se superpone a width*/
+        }
+        /*pseudoclase :nth-child(n)*/
+
+        /*Propiedades hijos directos flexibles
+        
+            order: ordena a los hijos flexibles. Cambia el orden de visualización, se indica con un número
+            flex-grow: indica cuanto puede crecer un hijo flexible. Por defecto es 0, es decir no crece
+            flex-shrink: indica cuanto puede reducir un hijo flexible. Su valor por defecto es 1, es decir se puede reducir.
+            flex: propiedad abreviada => flex-grow flex-shrink flex-basis:
+                flex:1 1 0%;
+            flex-basis: establece el ancho base o inicial del elemento hijo flex, hace lo mismo que width, pero prevalece sobre esa propiedad
+            align-self: CAE SIEMPRE: alinea los hijos directos flexibles, prevalecen sobre el align-items. Solo funciona si hay una altura height definida
+                valores: center, flex-start, flex-end...
+        
+        */
+        .flex-item:nth-child(1){
+            background-color: greenyellow;
+            order: 3;
+            flex-grow: 0; /*si pusiéramos el mismo valor en los 3, crecerán por igual y se repartirán el espacio disponible. Los números son una relación*/
+            flex-shrink: 0; /**cuanto menos valor, más se reducirá y antes empezará a reducirse si reducimos el tamaño de la pantalla*/
+            align-self: flex-end;
+        }
+
+        .flex-item:nth-child(2){
+            background-color: orange;
+            order:1;
+            flex-grow: 2;
+            flex-shrink: 1;
+            align-self:center;
+        }
+
+        .flex-item:nth-child(3){
+            background-color: purple;
+            order: 2;
+            flex-grow: 4;
+            flex-shrink: 2;
+            align-self:flex-start;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Elemento 1</div>
+        <div class="flex-item">Elemento 2</div>
+        <div class="flex-item">Elemento 3</div>
+
+    </div>
+</body>
+</html>
