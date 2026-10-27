@@ -1,8 +1,17 @@
-ul > li:first-child{
-    font-size: 20px;
-    color: purple;
+li:first-child{
+    font-size: 15pt;
+    color: blueviolet;
+    font-weight: bold;
 }
 
-h1{
-    color:red;
+li:last-child{
+    font-size: 25pt;
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+li:only-child{
+    font-size: 30pt;
+    text-shadow: 2px 2px 4px salmon;
+    color: black;
 }

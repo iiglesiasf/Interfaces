@@ -1,0 +1,25 @@
+h2:first-letter {
+    color: violet;
+    font-family: Fantastic;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+p:first-line{
+    font-style: italic;
+    text-decoration: underline;
+    font-size: small;
+}
+
+p::after{
+    content: " - Aloja more don";
+    color: red;
+}
+
+p::before{
+    content:"*.";
+}
+
+span:hover{
+    color:brown;
+}
