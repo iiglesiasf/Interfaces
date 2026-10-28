@@ -10,24 +10,25 @@ body{
 
 .galeria{
     padding: 40px;
-    display: flex;
+    display: flex; /*la dirección por defecto es row*/
     gap: 35px;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
-img{
+.tarjeta img{
     display: block;
     height: 200px;
-    width: auto;
+    width: 100%; /*medida relativa, depende del padre*/
 }
 
 .tarjeta{
     background-color:white;
     border-radius: 15px;
-    width: 250px;
+    flex-basis: 250px;
     height:auto;
-    overflow: hidden;
+    overflow: hidden; /*esconde las esquinas de la imagen para que se vea la redondez de la tarjeta*/
 
 }
 
@@ -38,12 +39,12 @@ img{
     gap: 15px;
 }
 
-a{
+.leyenda a{ /*no usar solo a, tratar de usar selectores más concretos*/
     background-color: rgb(29, 129, 129);
     color: white;
     text-decoration: none;
     text-align:center;
     padding: 10px;
-    width: 100px;
+    width: 100px; /*align-self: flex-start es una alternativa*/
     border-radius: 5px;
 }
