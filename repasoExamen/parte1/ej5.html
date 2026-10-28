@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .principal{
+        background-color: blue;
+        color: white;
+    }
+
+    .secundario{
+        background-color: rgb(176, 176, 176);
+        color: black;
+    }
+
+    .principal:hover{
+        background-color: rgb(0, 0, 145);
+    }
+
+    .disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .lista:first-child{
+        font-weight: bold;
+    }
+
+    .lista:last-child{
+        color:red;
+    }
+
+    .lista:nth-child(even){
+        background-color: rgb(193, 193, 193);
+    }
+
+
+
+</style>
+<body>
+    <div class="botones">
+    <button class="principal">Aceptar</button>
+    <button class="secundario">Cancelar</button>
+    <button class="principal" disabled>Enviar</button>
+</div>
+
+<ul class="lista">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+</ul>
+</body>
+</html>

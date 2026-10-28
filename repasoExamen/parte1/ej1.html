@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    p{
+        color:red;
+        font-size: 18px;
+    }
+
+    .contenedor p{
+        color: blue;
+    }
+
+    .contenedor > p{
+        color: green;
+    }
+
+    #titulo{
+        color: purple;
+    }
+
+    .especial{
+        font-weight: bold;
+    }
+
+</style>
+<body>
+
+    <h1 id="titulo">Mi página web</h1>
+
+<div class="contenedor">
+    <p>Primer párrafo</p>
+
+    <div class="interior">
+        <p>Segundo párrafo</p>
+    </div>
+
+    <p class="especial">Tercer párrafo</p>
+</div>
+
+<p>Cuarto párrafo</p>
+
+</body>
+</html>
