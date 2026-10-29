@@ -1,18 +1,21 @@
-*{
+*{ /*Reset basio*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* HEADER */
 header{
     background-color: #1D2320;
     color: white;
-    padding: 25px;
+    padding: 35px;
     display: flex;
+    gap: 15px;
     justify-content: space-around;
     align-items: center;
 }
 
+/* LOGO */
 #logo{
     text-decoration: none;
     display: flex;
@@ -27,22 +30,41 @@ header{
 
 #logo h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 36px;
+    font-size: 34px;
     color:white;
 }
 
+/* MENU DE NAVEGACION */
 #headerMap{
     display: flex;
     flex-direction: row;
     gap: 32px;
+
 }
+
 
 #headerMap a{
     text-decoration: none;
-    color: white;
+    color: #A39EAB;
     font-family: Amaranth, sans-serif;
-    font-size: 26px;
+    font-size: 24px;
+    display: inline-block;
+
 }
+
+
+#headerMap a:not(.activo):hover{
+    color: white;
+
+}
+
+#headerMap .activo{
+    color: white;
+    border-bottom-color: #caff7f;
+
+}
+
+/* FOTO DE PERFIL*/
 
 #fotoPerfil > img{
     height: 40px;
@@ -51,6 +73,21 @@ header{
     border: 1px solid #caff7f;
 }
 
+/* FOOTER */
+
+footer{
+    background-color: #1D2320;
+    color: white;
+}
+
+footer img{
+    width: 35px;
+    height: auto;
+}
+
+main{
+    margin-bottom: 300px;
+}
 
 @font-face{
     font-family: 'Amaranth';

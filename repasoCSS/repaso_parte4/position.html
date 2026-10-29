@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        
+        .estatico{
+            position: static;
+        }
+
+        .relativo{
+            background-color: aqua;
+            position: relative;
+            top: 100px;
+            right: 20px;
+            left: 100px;
+        }
+
+        .fijo{
+            background-color: yellowgreen;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .absoluto{
+            background-color: wheat;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            z-index: -1;
+        
+        }
+
+        .padre{
+            position: relative;
+        }
+
+        .hijo{
+            width: 50%; /*medira la mitad de su padre*/
+            height: 50%;
+            background-color: purple;
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+        }
+
+        .pegajoso{
+            width: 100%;
+            background-color: tomato;
+            position: sticky;
+            top: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- Position
+        static: valor por defecto, se posiciona según el flujo normal de la página
+        
+        relative: el elemento se puede mover desde su posicion natural. Valores: top, bottom, left, right
+        Se pueden poner valores negativos. El hueco que deja el elemento al moverse no puede cubrirse(tampoco se generan barras de desplazamiento horizontal)
+
+        fixed: el elemento se puede mover con especto a la pantalla(se queda pegado donde nosotros queramos).
+        Se pueden poner valores negativos. El hueco que deja el elemento al moverse SI se cubre
+        
+        absolute: el elemento se puede mover con especto a su primer padre si está posicionado. Si no, con respecto a la pantalla.
+        Estar posicionado significa tener cualquier valor de osition que no sea static
+        Se pueden poner valores negativos. El hueco que deja el elemento al moverse SI se cubre.
+        Se usa para mover ciertos elementos
+        
+        sticky: se comporta como relativo y cuando llega a un punto, como fijo. Se usa en menús de navegación
+
+        z-index establece el orden de las capas de los elementos (quien está por encima y por debajo)
+        es un número, por defecto 0, puede ser negativo. cuanto mayor sea, más por encima está.
+        Solo hace caso en los elementos posicionados
+    -->
+
+    <div class="estatico">Soy un container estático</div>
+    <div class="relativo">Soy un container relativo</div>
+    <div class="fijo">Soy un container fijo</div>
+    <div class="absoluto">Soy un container absoluto</div>
+    <div class="pegajoso">Soy el menú de navegación</div>
+
+    <div class="padre"> <!-- Posiciono el padre dándole cualqier position menos static -->
+        <div class="hijo">Hijo</div>
+    </div>
+
+</body>
+</html>
