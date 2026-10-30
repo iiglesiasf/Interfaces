@@ -14,7 +14,7 @@ header{
     color: white;
     padding: 35px;
     display: flex;
-    gap: 15px;
+    gap: 50px;
     justify-content: space-around;
     align-items: center;
 }
@@ -25,6 +25,7 @@ header{
     display: flex;
     align-items: center;
     gap: 5px;
+    letter-spacing: 1px;
 }
 
 #logo > img{
@@ -34,7 +35,6 @@ header{
 
 #logo h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 34px;
     color:white;
 }
 
@@ -77,11 +77,27 @@ header{
 }
 
 #busqueda form input{
-    border: 2px solid #CAFF7F;
+    border: 1.5px solid #CAFF7F;
     border-radius: 20px;
     background-color: #1D2320;
-    padding: 8px 16px;
+    padding: 7px 15px;
     font-family: Shanti, sans-serif;
+    width: 220px;
+}
+
+
+#busqueda form #iconoBarra {
+    background-image: url('icons/searchIcon.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    font-size: 0;
+    border: none;
+    transform: translateY(-5px) translateX(43px);
+    width: 20px;
+    height:20px;
+    
 }
 
 
@@ -91,7 +107,7 @@ header{
     height: 40px;
     width: 40px;
     border-radius: 25px;
-    border: 2px solid #caff7f;
+    border: 1.5px solid #caff7f;
 }
 
 /* FOOTER */
