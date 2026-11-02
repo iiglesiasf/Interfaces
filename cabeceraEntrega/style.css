@@ -12,9 +12,9 @@ main{
 header{
     background-color: #1D2320;
     color: white;
-    padding: 35px;
+    padding: 36px;
     display: flex;
-    gap: 50px;
+    gap: 100px;
     justify-content: space-around;
     align-items: center;
 }
@@ -25,7 +25,6 @@ header{
     display: flex;
     align-items: center;
     gap: 5px;
-    letter-spacing: 1px;
 }
 
 #logo > img{
@@ -34,8 +33,9 @@ header{
 }
 
 #logo h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Franklin;
     color:white;
+    font-size: 36px;
 }
 
 /* MENU DE NAVEGACION */
@@ -51,7 +51,7 @@ header{
     text-decoration: none;
     color: #A39EAB;
     font-family: Amaranth, sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     display: flex;
     transform: translateY(2px);
 
@@ -76,28 +76,26 @@ header{
     gap: 15px;
 }
 
+
+
 #busqueda form input{
     border: 1.5px solid #CAFF7F;
     border-radius: 20px;
     background-color: #1D2320;
     padding: 7px 15px;
     font-family: Shanti, sans-serif;
-    width: 220px;
+    width: 240px;
+    color: white;
+    padding-left: 30px;
 }
 
 
-#busqueda form #iconoBarra {
-    background-image: url('icons/searchIcon.svg');
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: white;
-    font-size: 0;
-    border: none;
-    transform: translateY(-5px) translateX(43px);
+#iconoBarra{
+    position: absolute;
     width: 20px;
-    height:20px;
-    
+    height: 20px;
+    transform: translateY(7px) translateX(7px);
+
 }
 
 
@@ -106,6 +104,7 @@ header{
 #fotoPerfil > img{
     height: 40px;
     width: 40px;
+    height: 40px;
     border-radius: 25px;
     border: 1.5px solid #caff7f;
 }
@@ -141,7 +140,7 @@ footer a:visited{
     gap: 10px;
     flex-direction: row;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Franklin;
 }
 
 #footerInfo{
@@ -163,4 +162,9 @@ footer a:visited{
 @font-face{
     font-family: 'Shanti';
     src: url(fonts/Shanti-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Franklin';
+    src: url(fonts/LibreFranklin-Black.ttf)
 }
