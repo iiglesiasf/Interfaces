@@ -1,4 +1,4 @@
-*{ /*Reset basio*/
+*{ /*Reset basico*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,11 +12,12 @@ main{
 header{
     background-color: #1D2320;
     color: white;
-    padding: 36px;
+    padding: 34px;
     display: flex;
-    gap: 100px;
+    gap: 60px;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 /* LOGO */
@@ -25,6 +26,7 @@ header{
     display: flex;
     align-items: center;
     gap: 5px;
+    flex-shrink: 0;
 }
 
 #logo > img{
@@ -35,7 +37,8 @@ header{
 #logo h1{
     font-family: Franklin;
     color:white;
-    font-size: 36px;
+    font-size: 30px;
+
 }
 
 /* MENU DE NAVEGACION */
@@ -51,7 +54,7 @@ header{
     text-decoration: none;
     color: #A39EAB;
     font-family: Amaranth, sans-serif;
-    font-size: 26px;
+    font-size: 23px;
     display: flex;
     transform: translateY(2px);
 
@@ -60,11 +63,12 @@ header{
 
 #headerMap a:not(.activo):hover{
     color: white;
-    
 }
+
 
 #headerMap .activo{
     color: white;
+    font-family: Amaranth-Bold;
     border-bottom: 5px solid #CAFF7F;
     transform: translateY(-2px);
 }
@@ -72,11 +76,9 @@ header{
 /* BARRA BUSQUEDA*/
 #busqueda{
     display: flex;  
-    align-items: center;
+    flex-direction: center;
     gap: 15px;
 }
-
-
 
 #busqueda form input{
     border: 1.5px solid #CAFF7F;
@@ -84,17 +86,18 @@ header{
     background-color: #1D2320;
     padding: 7px 15px;
     font-family: Shanti, sans-serif;
-    width: 240px;
+    width: 220px;
+    height: 32px;
     color: white;
-    padding-left: 30px;
-}
+    padding-left: 34px;
 
+}
 
 #iconoBarra{
     position: absolute;
     width: 20px;
     height: 20px;
-    transform: translateY(7px) translateX(7px);
+    transform: translateY(7px) translateX(10px);
 
 }
 
@@ -102,9 +105,8 @@ header{
 /* FOTO DE PERFIL*/
 
 #fotoPerfil > img{
-    height: 40px;
-    width: 40px;
-    height: 40px;
+    height: 32px;
+    width: 32px;
     border-radius: 25px;
     border: 1.5px solid #caff7f;
 }
@@ -114,7 +116,7 @@ header{
 footer{
     background-color: #1D2320;
     color: white;
-    padding: 50px;
+    padding: 40px 65px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -122,12 +124,13 @@ footer{
 }
 
 footer img{
-    width: 35px;
+    width: 30px;
     height: auto;
 }
 
 footer a{
     text-decoration: none;
+    color:#A39EAB;
 }
 
 footer a:visited{
@@ -157,6 +160,11 @@ footer a:visited{
 @font-face{
     font-family: 'Amaranth';
     src: url(fonts/Amaranth-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Amaranth-Bold';
+    src: url(fonts/Amaranth-Bold.ttf);
 }
 
 @font-face{
