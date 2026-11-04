@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: grid</title>
+    <style>
+        /* Para indicar las columnas de la grid, se usa grid-template-columns
+        Para las filas, se usa grid-template-rows
+        Para separar las celdas de las filas y columnas, se usa columns-gap y row-gap
+        Para mover una celda en horizontal, se usa justify-items y en vertical align-items
+        Para ajustar la grid, se usa justify-content(para horizontal) y align-content(para vertical)
+        Todas estas son propiedades del padre
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        .container{
+            background-color: beige;
+            display: grid;
+            /*grid-template-columns: 100px 100px 100px//define le numero y tamaños de las columnas(cada valor es para cada columna, con esto las definimos)
+                valores posibles:
+                    medida fija: px
+                    medida relativa: %
+                    fraccion: fr, se reparte el espacio disponible(si hay), independientemente del contenido
+                    auto: ocupa el espacio disponible y lo reparte. Depende del contenido que haya en cada elemento
+                    minmax()
+                    repeat(num, instruccion)          
+            */
+            /* grid-template-columns: 100px 50%*/
+            /* grid-template-columns: 1fr 1fr*/
+            /* grid-template-columns: auto auto;*/
+            /* grid-template-columns: 150px minmax(420px,1fr);*/
+            grid-template-columns: repeat(2, 1fr); /*1fr 1fr*/
+
+            /*grid-template-rows: 100px 100px
+                valores posibles:
+                    medida fija: px
+                    medida relativa: %
+                    fraccion: fr, se reparte el espacio disponible(si hay), independientemente del contenido
+                    auto: ocupa el espacio disponible y lo reparte. Depende del contenido que haya en cada elemento
+                    minmax()
+                    repeat(num, instruccion)
+            */
+
+            grid-template-rows: 100px 100px;
+
+            /*gap: row-gap, column-gap*/
+            gap: 20px; /* las propiedades anteriores no tienen en cuentael gap*/
+        
+            /*justify-content: alinea si hay esspacio en el eje X la cuadrícula
+                start
+                end 
+                center
+                space-between
+                space-evenly
+                space-around
+            
+            */
+
+            justify-content: end;
+        
+        }
+
+        .item{
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
