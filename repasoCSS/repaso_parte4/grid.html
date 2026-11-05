@@ -47,12 +47,13 @@
                     repeat(num, instruccion)
             */
 
-            grid-template-rows: 100px 100px;
+            grid-template-rows: 10px 100px;
+            height: 300px;
 
             /*gap: row-gap, column-gap*/
             gap: 20px; /* las propiedades anteriores no tienen en cuentael gap*/
         
-            /*justify-content: alinea si hay esspacio en el eje X la cuadrícula
+            /*justify-content: alinea si hay esspacio en el eje X la cuadrícula(horizontal, de izquierda a derecha)
                 start
                 end 
                 center
@@ -63,11 +64,36 @@
             */
 
             justify-content: end;
+
+            /*align-content: alinea la cuadricula si hay espacio en el eje vertical
+                tiene las mismas propiedades que al anterior y para que funcione, debe tener un height(solo funciona en vertical)
+
+            */
+
+            align-content: center;
+
+            /* place-content: la propiedad abrevida de align-content y justify-content (en este orden) NO ENTRA EN EL EXAMEN*/
         
         }
 
         .item{
             background-color: yellowgreen;
+
+            display: grid;
+
+            /*justify-items: alineacion horizontal de un elemento en su celda
+                tiene las mismas propiedades anteriores
+            
+            */
+
+            justify-items: end;
+
+            /*align-items: alineación vertical de un elemento en su celda
+                tiene las mismas propiedades anteriores y necesita que el elemento tenga una altura
+            
+            */
+
+            align-items: start;
         }
 
     </style>
