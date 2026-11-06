@@ -14,18 +14,34 @@ body{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 100px 45px 400px 80px;
     /*grid-template-areas: creauna plantilla con las áreas que querais de la cuadricula*/
-    grid-template-areas:
+    /*grid-template-areas:
         "cabecera cabecera"
         "men men"
         "cuerpo menlat"
-        "pie pie";
+        "pie pie";*/
 }
+
+/*  grid-column-start: indica en qué columna donde empieza el elemento
+    grid-column-end: indica en qué columna acaba el elemento
+    grid-column: propidad abreviada que combina las 2 anteriores
+
+    grid-row-start: indica en qué fila donde empieza el elemento
+    grid-row-end: indica en qué fila acaba el elemento
+    grid-row: propidad abreviada que combina las 2 anteriores
+
+    justify-self: mueve el elemento horizontalmente en su celda
+    align-self: mueve el elemento verticalmente en su celda
+*/
 
 header{
     background-color: cyan;
     padding: 15px;
     padding-bottom: 30px;
-    grid-area: cabecera; /*propiedad de los hijos div*/
+    /*grid-area: cabecera; /*propiedad de los hijos div*/
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+    /*grid-column: 1 / span 2; *//*se expande 2 columnas*/
+    grid-column: 1 / 3; /* va de la columna 1 a la 3*/
 }
 
 nav{
@@ -35,7 +51,9 @@ nav{
     gap: 15px;
     align-items: center;
     padding: 15px;
-    grid-area: men;
+    /*grid-area: men;*/
+    grid-column-start:1;
+    grid-column-end:3;
 }
 
 nav a{
@@ -50,7 +68,10 @@ aside{
     gap: 25px;
     align-items: center;
     padding: 25px;
-    grid-template-areas: menlat;
+    /*grid-template-areas: menlat;*/
+    grid-row-start:3;
+    grid-row-end:6;
+    justify-self: stretch;
 }
 
 aside a{
@@ -60,11 +81,16 @@ aside a{
 main{
     background-color: rgb(255, 220, 196);
     padding: 25px;
-    grid-area: cuerpo;
+    /*grid-area: cuerpo;*/
+    grid-row-start:3;
+    grid-row-end:6;
+    align-self: stretch;
 }
 
 footer{
     background-color: rgb(187, 187, 187);
     padding: 25px;
-    grid-area: pie;
+    /*grid-area: pie;*/
+    grid-column-start:1;
+    grid-column-end:3;
 }
