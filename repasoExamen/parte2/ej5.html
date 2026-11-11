@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .blog p{
+        color: grey;
+    }
+
+    .entrada + h2{
+        color: blue;
+    }
+
+    p + a{
+        font-style: italic;
+    }
+
+
+    .entrada:first-child{
+        border: 2px solid red;
+    }
+
+    .entrada:last-child{
+        background-color: grey;
+    }
+
+    a:visited{
+        color: purple;
+    }
+
+
+    h2::before{
+        content: "★";
+    }
+
+    h1::after{
+       content: "- Mi espacio web"; 
+    }
+
+    .entrada p::first-letter{
+        font-size: 35px;
+    }
+
+    a::after{
+        content: "→";
+    }
+
+
+
+</style>
+<body>
+    <div class="blog">
+        <header>
+            <h1>Mi blog personal</h1>
+            <p>Bienvenido a mi espacio.</p>
+        </header>
+
+        <main>
+            <article class="entrada">
+                <h2>Mi primer artículo</h2>
+                <p>Hoy comienzo mi nuevo blog.</p>
+                <a href="#">Leer artículo</a>
+            </article>
+
+            <article class="entrada">
+                <h2>Aprendiendo CSS</h2>
+                <p>Estoy descubriendo los selectores.</p>
+                <a href="#">Leer artículo</a>
+            </article>
+
+            <article class="entrada">
+                <h2>Diseño web</h2>
+                <p>Quiero aprender a crear páginas web.</p>
+                <a href="#">Leer artículo</a>
+            </article>
+        </main>
+
+        <footer>
+            <p>Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

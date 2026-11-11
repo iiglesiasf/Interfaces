@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.caja {
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.caja1 {
+    background-color: lightblue;
+    position: static;
+    top: 50px;
+}
+
+.caja2 {
+    background-color: lightgreen;
+    position: relative;
+    top: -30px;
+    left: -20px;
+}
+
+.caja3 {
+    background-color: lightcoral;
+}
+
+.caja4 {
+    background-color: orange;
+}
+
+.contenedor {
+    width: 400px;
+
+    background-color: lightblue;
+    border: 2px solid black;
+
+}
+
+.elemento {
+    width: 120px;
+    height: 80px;
+    background-color: coral;
+
+}
+
+.caja-extra {
+    width: 120px;
+    height: 80px;
+    background-color: lightgreen;
+    bottom: 0;
+    right: 0;
+}

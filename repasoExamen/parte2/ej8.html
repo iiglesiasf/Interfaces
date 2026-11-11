@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .tienda p{
+        color: grey;
+    }
+
+    .producto > h2{
+        color: blue;
+    }
+
+    h2 + p{
+        font-size: 1.2em;
+    }
+
+    h2 ~ a{
+        background-color: yellow;
+    }
+
+    .productos .producto:first-child{
+        border: 1px solid green;
+    }
+
+    .productos .producto:last-child{
+        background-color: pink;
+    }
+
+    .producto.oferta{
+        color: red;
+    }
+
+    a:hover{
+        color: white;
+    }
+
+    .productos .producto:nth-child(3) h2{
+        text-decoration: underline;
+    }
+
+    h2::before{
+        content: "★";
+    }
+
+    .tienda{
+        width: 100%;
+    }
+
+    .productos{
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .producto{
+        width: 80%;
+        min-width: 250px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 10px;
+    }
+
+
+</style>
+<body>
+    <div class="tienda">
+    <h1>Nuestra tienda</h1>
+
+    <section class="productos">
+        <article class="producto">
+            <h2>Ordenador portátil</h2>
+            <p>Ideal para trabajar y estudiar.</p>
+            <a href="#">Ver producto</a>
+        </article>
+
+        <article class="producto oferta">
+            <h2>Teléfono móvil</h2>
+            <p>Un dispositivo de última generación.</p>
+            <a href="#">Ver producto</a>
+            <a href="#">Más información</a>
+        </article>
+
+        <article class="producto">
+            <h2>Tablet</h2>
+            <p>Perfecta para disfrutar de contenido multimedia.</p>
+            <a href="#">Ver producto</a>
+        </article>
+    </section>
+</div>
+</body>
+</html>

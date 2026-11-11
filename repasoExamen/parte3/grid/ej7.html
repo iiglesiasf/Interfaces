@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .web{
+        height: 700px;
+        display: grid;
+        grid-template-columns: 150px 1fr 200px;
+        grid-template-rows: 80px 1fr 60px;
+        grid-template-areas:
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+        grid-area: main;
+    }
+
+    .card{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .header{
+        grid-area: header;
+    }
+
+    .nav{
+        grid-area: nav;
+    }
+
+    .aside{
+        grid-area: aside;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+
+</style>
+
+<body>
+    <div class="web">
+        <header class="header">HEADER</header>
+        <nav class="nav">NAV</nav>
+        <main class="main">
+            <section class="card">CARD 1</section>
+            <section class="card">CARD 2</section>
+            <section class="card">CARD 3</section>
+            <section class="card">CARD 4</section>
+        </main>
+        <aside class="aside">ASIDE</aside>
+        <footer class="footer">FOOTER</footer>
+    </div>
+</body>
+</html>

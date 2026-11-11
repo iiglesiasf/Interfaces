@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .titulo::before{
+        content: "🍳";
+    }
+
+    .titulo::after{
+        content: "¡A cocinar!"
+    }
+
+    .introduccion::first-letter{
+        font-size: 40px;
+        color: red;
+        font-style: italic;
+    }
+
+    .ingredientes li::marker{
+        color: green;
+        font-size: 25px;
+        
+    }
+
+    /* Para eliminar las viñetas, si lo deseas */
+    .ingredientes {
+        list-style-type: none;
+    }
+
+</style>
+<body>
+    <h1 class="titulo">Mis recetas favoritas</h1>
+
+    <p class="introduccion">
+        Aquí encontrarás recetas sencillas y deliciosas.
+    </p>
+
+    <h2>Ingredientes</h2>
+
+    <ul class="ingredientes">
+        <li>Harina</li>
+        <li>Huevos</li>
+        <li>Leche</li>
+        <li>Azúcar</li>
+    </ul>
+</body>
+</html>

@@ -16,7 +16,7 @@
     }
 
     .etiqueta{
-        background-color: color;
+        background-color: red;
         color: white;
         font-weight: bold;
         border-radius: 4px;
@@ -29,7 +29,7 @@
     }
 
     .precio{
-        background-color: green;
+        color: green;
         font-size: 24px;
         font-weight: bold;
     }
@@ -44,6 +44,14 @@
 
     .comprar:hover{
         background-color: rgb(0, 0, 152);
+    }
+
+    .producto .precio { /* Prevalece esta regla porque se refiere a 2 clases sobre la otra propiedad, que solo tiene 1*/
+        color: orange;
+    }
+
+    .precio {
+        color: green;
     }
 
 </style>

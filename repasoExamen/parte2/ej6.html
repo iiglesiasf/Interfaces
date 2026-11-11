@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .biblioteca p{
+        color: grey;
+    }
+
+    .libros > article{
+        border: 1px solid black;
+    }
+
+    h3 + p{
+        color: blue;
+    }
+
+    p ~ a{
+        background-color: yellow;
+    }
+
+    .libros:first-of-type{
+        color: red;
+    }
+
+    .libros:last-of-type{
+        color: green;
+    }
+
+    .libros:nth-child(2){
+        background-color: pink;
+    }
+
+    a:hover{
+        color: white;
+
+    }
+
+    .categorias li:nth-child(3){
+        font-weight: bold;
+    }
+
+    .categorias li:nth-child(even){
+        background-color: grey;
+    }
+
+    .libros h2:first-child{
+        color: red;
+    }
+
+    .libros article:last-child{
+        color: green;
+    }
+
+    .libros article:nth-child(3){
+        background-color: pink;
+    }
+
+</style>
+<body>
+    <div class="biblioteca">
+    <h1>Mi biblioteca</h1>
+
+    <section class="libros">
+        <h2>Libros disponibles</h2>
+
+        <article class="libro">
+            <h3>El principito</h3>
+            <p>Un clásico de la literatura.</p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="libro destacado">
+            <h3>Don Quijote</h3>
+            <p>Una gran novela española.</p>
+            <a href="#">Leer más</a>
+            <a href="#">Comprar</a>
+        </article>
+
+        <article class="libro">
+            <h3>La Odisea</h3>
+            <p>Una aventura épica.</p>
+            <a href="#">Leer más</a>
+        </article>
+    </section>
+
+    <ul class="categorias">
+        <li>Novela</li>
+        <li>Poesía</li>
+        <li>Historia</li>
+        <li>Ciencia</li>
+        <li>Fantasía</li>
+    </ul>
+</div>
+</body>
+</html>

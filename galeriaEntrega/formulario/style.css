@@ -1,0 +1,115 @@
+*{/*Reset*/
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    min-height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+/*Formulario*/
+
+#form{
+    background-color: #0B0D09;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 50%;
+    height:80%;
+    font-family: Shanti;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-self: center;
+    
+}
+
+#form h2{
+    font-family: Amaranth-Bold;
+}
+
+#form div{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+#form > p{
+    color: rgba(255, 255, 255, 0.737);
+   
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+/*Enlaces*/
+
+a{
+    text-decoration: none;
+    color:#D59667;
+}
+
+label > a{
+    font-weight: bold;
+}
+
+/*Inputs*/
+
+input[type="submit"]{
+    background-color: #B8E83C;
+    border: none;
+    color: black;
+    border-radius: 15px;
+    font-family: Amaranth-Bold;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #CAFF7F;
+}
+
+input[type="password"], input[type="email"]{
+    border-radius: 15px;
+    height: 50px;
+    background-color: #171916;
+    border: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* FONTS */
+
+@font-face{
+    font-family: 'Amaranth';
+    src: url(fonts/Amaranth-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Amaranth-Bold';
+    src: url(fonts/Amaranth-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Shanti';
+    src: url(fonts/Shanti-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Franklin';
+    src: url(fonts/LibreFranklin-Black.ttf)
+}

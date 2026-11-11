@@ -1,0 +1,131 @@
+*{ /*Selector universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+
+body{
+    background-color: #0B0D09;
+}
+
+/*Galeria entera*/
+.galeria{
+    padding: 75px;
+
+}
+
+
+/*Distribucion de las columnas*/
+.peliculasPopulares, .seriesPopulares, .nuevosEstrenos, .mejorValoradas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 195px);
+    gap: 95px;
+    margin-bottom: 45px;
+
+}
+
+/*Titulos de seccion*/
+.titulo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 20px;
+    grid-template-areas: titulo;
+}
+
+
+.titulo h2{
+    color: white;
+    font-size: 36px;
+    font-family: Amaranth-Bold;
+    
+}
+
+.verMas{
+    color: #D59667;
+    font-family: Shanti;
+    text-decoration: none;
+    display: flex;
+    gap:5px;
+    
+}
+
+
+
+/*Etiqueta de puntuacion*/
+.puntuacion{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;    
+
+    background-color:rgba(0, 0, 0, 0.737);
+    border-radius: 6px;
+
+    padding: 2px 8px;
+    transform: translateX(10px) translateY(10px);
+
+}
+
+.puntuacion p{
+    color: white;
+
+}
+
+/*Contenido*/
+
+.peliculas{
+    width:198px;
+    height: 300px;
+    border-radius: 12px;
+
+
+}
+
+/*Textos de los enlaces*/
+
+.contenido a{
+    width:198px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+a p{
+    
+    color: white;
+    font-family: Shanti;
+}
+
+a p:nth-child(4){
+    opacity: 0.5;
+}
+
+
+/* FONTS */
+
+@font-face{
+    font-family: 'Amaranth';
+    src: url(fonts/Amaranth-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Amaranth-Bold';
+    src: url(fonts/Amaranth-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Shanti';
+    src: url(fonts/Shanti-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Franklin';
+    src: url(fonts/LibreFranklin-Black.ttf)
+}

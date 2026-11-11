@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .noticias p{
+        color: grey;
+    }
+
+    .noticia > h2{
+        color: blue;
+    }
+
+    p + a{
+        color: red;
+    }
+
+    h2 ~ a{
+        text-decoration: underline;
+    }
+
+
+    .noticias .noticia:first-child{
+        border: 2px solid green;
+    }
+
+    .noticias .noticia:last-child{
+        background-color: rgb(188, 188, 188);
+    }
+
+    .noticia:hover{
+        background-color: yellow;
+    }
+
+    .categorias li:nth-child(2){
+        font-weight: bold;
+    }
+
+    .categorias li:nth-child(odd){
+        color: purple;
+    }
+
+    a:visited{
+        color: grey;
+    }
+
+    h2::before{
+        content: "★";
+    }
+
+    h1::after{
+        content: " | Actualidad."
+    }
+
+    .noticias p::first-letter{
+        font-size: 30px;
+        color: orange;
+    }
+
+    .categorias li::marker{
+        color: red;
+    }
+
+
+</style>
+<body>
+    <div class="noticias">
+
+        <h1>Últimas noticias</h1>
+
+        <article class="noticia destacada">
+            <h2>Primera noticia</h2>
+            <p>Esta es la noticia más importante.</p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="noticia">
+            <h2>Segunda noticia</h2>
+            <p>Esta noticia contiene información adicional.</p>
+            <a href="#">Leer más</a>
+            <a href="#">Compartir</a>
+        </article>
+
+        <article class="noticia">
+            <h2>Tercera noticia</h2>
+            <p>Esta noticia es la última de la sección.</p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <ul class="categorias">
+            <li>Deportes</li>
+            <li>Tecnología</li>
+            <li>Cultura</li>
+            <li>Economía</li>
+        </ul>
+
+    </div>
+</body>
+</html>

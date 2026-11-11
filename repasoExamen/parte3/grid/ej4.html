@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+    }
+
+    .caja1{
+        grid-row:1;
+    }
+
+    .caja2, .caja3, .caja4{
+        grid-row:2;
+    }
+
+    .caja2{
+        grid-column: 1;
+    }
+
+    .caja3{
+        grid-column: 2;
+    }
+
+    .caja4{
+        grid-column: 3;
+    }
+
+    .caja5{
+        grid-row: 3;
+    }
+
+    .caja1, .caja5{
+        grid-column:1/4;
+    }
+
+</style>
+<body>
+    <div class="contenedor">
+        <div class="caja caja1">1</div>
+        <div class="caja caja2">2</div>
+        <div class="caja caja3">3</div>
+        <div class="caja caja4">4</div>
+        <div class="caja caja5">5</div>
+    </div>
+</body>
+</html>

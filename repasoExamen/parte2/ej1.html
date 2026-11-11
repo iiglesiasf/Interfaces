@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .contenedor p{
+        color: red;
+    }
+
+    .contenedor > p{
+        color: blue;
+    }
+
+    .contenedor + p{
+        color: purple;
+    }
+
+    .contenedor ~ p{
+        color: green;
+    }
+
+    .cinco:hover{
+        background-color: yellow;
+    }
+
+    .contenedor p:first-child{
+        font-weight: bold;
+    }
+
+    .contenedor p:last-child{
+        color: orange;
+    }
+
+
+
+</style>
+<body>
+    <div class="contenedor">
+        <p class="uno">Párrafo 1</p>
+
+        <section>
+            <p class="dos">Párrafo 2</p>
+        </section>
+
+        <p class="tres">Párrafo 3</p>
+
+        <h2>Título</h2>
+        <p class="cuatro">Párrafo 4</p>
+        <p class="cinco">Párrafo 5</p>
+    </div>
+
+    <p class="seis">Párrafo 6</p>
+    <p class="siete">Párrafo 7</p>
+
+    <div class="otro">
+        <p class="ocho">Párrafo 8</p>
+    </div>
+</body>
+</html>

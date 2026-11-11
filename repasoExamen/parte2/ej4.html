@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .tienda p{
+            color: grey;
+        }
+
+        .productos > article{
+            border: 1px solid black;
+        }
+
+        h2 + p{
+            color: blue;
+        }
+
+        p ~ a{
+            background-color: yellow;
+        }
+
+        .productos article:first-child{
+            background-color: greenyellow;
+        }
+
+        .productos article:last-child{
+            background-color: pink;
+        }
+
+        article.oferta{
+            color: red;
+        }
+
+        a:hover{
+            color: white;
+        }
+
+        .marcas li:nth-child(3){
+            font-weight: bold;
+        }
+
+        .marcas li:nth-child(even){
+            background-color: grey;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="tienda">
+        <h1>Productos destacados</h1>
+
+        <section class="productos">
+            <article class="producto">
+                <h2>Portátil</h2>
+                <p>Ordenador de alto rendimiento.</p>
+                <a href="#">Ver producto</a>
+            </article>
+
+            <article class="producto oferta">
+                <h2>Teléfono móvil</h2>
+                <p>Última tecnología disponible.</p>
+                <a href="#">Ver producto</a>
+                <a href="#">Más información</a>
+            </article>
+
+            <article class="producto">
+                <h2>Tablet</h2>
+                <p>Ideal para estudiar y trabajar.</p>
+                <a href="#">Ver producto</a>
+            </article>
+        </section>
+
+        <ul class="marcas">
+            <li>Apple</li>
+            <li>Samsung</li>
+            <li>Lenovo</li>
+            <li>Asus</li>
+            <li>HP</li>
+        </ul>
+    </div>
+</body>
+</html>
